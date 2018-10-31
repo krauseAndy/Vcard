@@ -8,3 +8,58 @@ body{
     background-size: cover;
     overflow: hidden;
 }
+.container{
+    /********grid********/
+    display:grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    /*******style********/
+    background-image: linear-gradient(to top right , rgba(189,190,192),rgba(138,140,139),rgba(87,88,91,0));
+    background-color: black;
+    box-shadow: 10px 10px 15px black;
+    max-width: 360px;
+    height: 300px;
+    margin:0 auto;
+    border-radius: 5px;
+    margin-top: 10%;
+}
+    /*********picture*******/
+.picture{
+    grid-column-start: 2;
+}
+img{
+    margin-top:10px;
+    width: 100%;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+.text{
+    z-index: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    text-align: center;
+    color: black;
+}
+h1{
+    padding:0;
+    margin:0;
+    font-family: 'Tangerine', cursive;
+    color:rgba(65, 60, 60, 0.486);
+    font-size: 50px;
+    font-style: italic;
+    font-weight: lighter;
+    text-shadow: -6px 1px black;
+}
+h2{
+    font-family: 'VT323', monospace;
+    font-weight: lighter;
+    padding: 0;
+    margin:0;
+}
+span{
+    font-family: 'VT323', monospace;
+}
+hr{
+    width:50%;
+}
